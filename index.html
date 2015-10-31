@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Hangman!</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" type="text/css">
+	<link rel="stylesheet" href="hangman.css" type="text/css">
+</head>
+<!-- <body class="bg-info"> -->
+<body>
+	<div class="container bg-primary">
+		<div class="row">
+			<h1 class="col-xs-4 col-xs-offset-4">Welcome to Hangman!</h1>
+		</div>
+
+		<div class="row">
+			<h2 class="col-xs-4 col-xs-offset-4">Use your keyboard to input letters!</h2>
+		</div>
+
+		<div class="row col-xs-4 col-xs-offset-4">
+			<p>Press the Spacebar and A random word will be chosen for you, Press it again to reset the game, use your keyboard to input letters, if you've already used a letter, the screen will flash, if you guess correctly, the letter will show up in the corresponding place, you have 10 lives so good luck!</p>
+		</div>
+	</div>
+	<div class="container">
+		
+		<div class="row">
+
+			<div class="col-xs-4 col-md-4 bg-danger info incorrect">
+				<h1 class="text-danger" id="wrongLetters">Incorrect Letters!
+				</h1>
+			</div>
+
+			<div class="col-xs-4 col-md-4 bg-warning">
+				<h1 class="text-warning">Don't Get Hung!</h1>
+				<canvas id="hangman">Fallback text</canvas>
+			</div>
+				
+			<div class="col-xs-4 col-md-4 bg-success info available">
+				<h1 class="text-success" id="lettersAvailable">Available Letters!</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-offset-2 col-xs-8" id="selectedWord">
+				
+			</div>
+		</div>	
+
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src="/hangman.js"></script>
+</body>
+</html>
