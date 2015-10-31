@@ -1,0 +1,21 @@
+canvas#hangman {
+	width : 360px;
+	height: 250px;
+	border: dotted;
+	border-radius: 10px;
+	border-color: black;
+}
+.letters {
+	font-size: 2.3em;
+	font-weight: bold;
+}
+
+.answer {
+	font-size: 4em;
+	font-weight: bold;
+	text-align: center;
+}
+
+div.info {
+	height: 324px;
+}
